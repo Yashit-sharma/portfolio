@@ -45,7 +45,7 @@ export default function Navbar() {
             <ul className='nav-ul'>
                 <li onClick={()=>{scrollToSection('home',650)}} className='items'>Home</li>
                 <li onClick={()=>{scrollToSection('about',650)}} className='items'>About Me</li>
-                <li onClick={()=>{scrollToSection('about',650)}} className='items'>Work</li>
+                <li onClick={()=>{scrollToSection('work',650)}} className='items'>Work</li>
             </ul>
         </div>
         <div className="buttons">
