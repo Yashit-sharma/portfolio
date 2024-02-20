@@ -1,0 +1,105 @@
+
+.intro--wrap{
+    /* border: 2px solid springgreen; */
+    margin-block: 15vh;
+    /* padding: 40px 10px; */
+    padding: 40px 50px;
+    display: flex;
+    justify-content: center;
+}
+.intro-left{
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid salmon; */
+    width: 40%;
+}
+.intro-right{
+    display: flex;
+    margin-bottom: 50px;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid pink; */
+    width: 60%;
+}
+.left--items :nth-child(n){
+    padding-block: 10px;
+}
+.a_btn_intro{
+    position: relative;
+    bottom: 30px;
+    padding: 0px !important;
+    cursor: pointer;
+}
+#btn{
+    cursor: pointer;
+    color: #EEE;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+    border: none;
+    font-size: 18px;
+    padding: 6px 32px;
+    border-radius: 24px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+.intro-left:nth-child(1){
+    line-height: 6.5rem;
+    font-size: 6.6em;
+    color: #EEE;
+}
+.blue{
+    color: #00ADB5;
+}
+.bg-circle{
+    margin-left: 25px;
+}
+.person-1{
+    margin-top:250px;
+    position: absolute;
+}
+@media screen and (max-width:840px){
+    .intro-left:nth-child(1){
+        font-size: 5rem;
+    }
+}
+@media screen and (max-width:710px){
+    .intro--wrap{
+        margin-block: 0px;
+        padding-block: 10px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .intro-left{
+        width: 80%;
+    }
+    .intro-right{
+        margin-top: 10px;
+    }
+    .intro-right > img{
+        object-fit: contain;
+    }
+    .person-1{
+        width: 40%;
+    }
+}
+@media screen and (max-width:550px){
+    .bg-circle{
+        padding-block: 20px;
+        height: inherit;
+        width: 80%;
+    }
+    .intro-left{
+        margin-block: 40px;
+        padding: 0px;
+        line-height: 4.5rem !important;
+    }
+    .intro-left:nth-child(1){
+        font-size: 4rem;
+    }
+}

@@ -1,0 +1,73 @@
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.wrapper-proj{
+    background-image: url('/Users/yashitsharma/Downloads/VSCODE/Assignments/portfolio/public/Images/bg-square.png');
+    background-repeat: repeat;
+    /* opacity: 0.8; */
+    color: #EEE;
+    margin-top: 25vh;
+    margin-bottom: 50px;
+    padding: 50px 0px;
+    display: flex;
+}
+.heading-proj{
+    /* filter: brightness(2.5); */
+    width: 100%;
+    text-align: center;
+}
+.heading-proj > span{
+    font-size: 64px;
+}
+.proj-cards{
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+.cards{
+    border-radius: 16px;
+    /* backdrop-filter: blur(2px); */
+    /* padding: 20px; */
+    height: 180px;
+    width: 250px;
+    /* border: 2px solid springgreen; */
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.image > img{
+    border-radius: 8px;
+    /* padding: 20px; */
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+}
+.image:hover > img{
+    transition: all 0.4s ease;
+    opacity: 0.3;
+}
+.image:hover > .title{
+    /* color: #00ADB5; */
+    color: #EEE;
+    font-size: 30px;
+    display: flex;
+    opacity: 10;
+}
+.title{
+    display: none;
+    position: absolute;
+}
+@media screen and (max-width:710px) {
+    .wrapper-proj{
+        margin-block: 50px;
+        padding: 30px 0px;
+    }
+    
+}
