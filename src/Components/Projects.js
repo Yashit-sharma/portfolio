@@ -30,10 +30,10 @@ export default function Projects() {
   return (
     <>
     <div className="wrapper-proj">
-        <div className="heading-proj" id='work'>
+        <div className="heading-proj">
             <span>My recent <span className="blue">works</span>
             </span>
-            <div className="proj-cards">
+            <div className="proj-cards" id='work'>
                 {
                     Data.map((ele,index) =>{
                         return(
