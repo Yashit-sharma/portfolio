@@ -19,7 +19,8 @@ a{
     text-align: center;
 }
 .heading-proj > span{
-    font-size: 64px;
+    padding: 0px 7px;
+    font-size: 59px;
 }
 .proj-cards{
     padding: 20px 30px;
@@ -69,5 +70,4 @@ a{
         margin-block: 50px;
         padding: 30px 0px;
     }
-    
 }

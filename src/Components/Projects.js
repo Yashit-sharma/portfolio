@@ -1,5 +1,6 @@
 import React from 'react'
 import '../Styles/Projects.css'
+import {motion} from 'framer-motion'
 export default function Projects() {
     const Data = [
     {
@@ -38,14 +39,17 @@ export default function Projects() {
                     Data.map((ele,index) =>{
                         return(
                             <>
-                            <div className="cards">
+                            <motion.div
+                            whileHover={{scale:0.85}}
+                            transition={{duration:0.3}}
+                            className="cards">
                                 <a href={'http://'+ele.Link}>
                                 <div className="image">
                                     <h3 className='title'>{ele.Name}</h3>
                                     <img className='img-map' src={ele.Image} alt="" />
                                 </div>
                                 </a>
-                            </div>
+                            </motion.div>
                             </>
                         )
                     })

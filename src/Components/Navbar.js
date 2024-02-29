@@ -12,27 +12,20 @@ export default function Navbar() {
   // };
   const scrollToSection = (sectionId, duration) => {
     const targetSection = document.getElementById(sectionId);
-
     if (!targetSection) return;
-
     const targetPosition = targetSection.offsetTop;
     const startPosition = window.pageYOffset;
     const distance = targetPosition - startPosition;
     const startTime = performance.now();
-
     const easeInOutQuad = (t) => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
-
     const scroll = (currentTime) => {
       const timeElapsed = currentTime - startTime;
       const progress = Math.min(timeElapsed / duration, 1);
-
       window.scrollTo(0, startPosition + distance * easeInOutQuad(progress));
-
       if (timeElapsed < duration) {
         requestAnimationFrame(scroll);
       }
     };
-
     requestAnimationFrame(scroll);
   };
   return (
